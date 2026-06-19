@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TradingMentor — Master the Markets</title>
+
+  <meta property="og:title" content="TradingMentor — Master the Markets">
+  <meta property="og:description" content="Learn trading from mentors who've been in the markets for years. One program, three plans, real results.">
+  <meta property="og:image" content="https://varsansri.github.io/TradingMentor/images/logo.png">
+  <meta property="og:url" content="https://varsansri.github.io/TradingMentor/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TradingMentor — Master the Markets">
+  <meta name="twitter:description" content="Learn trading from mentors who've been in the markets for years.">
+  <meta name="twitter:image" content="https://varsansri.github.io/TradingMentor/images/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__brand">
+        <div class="nav__brand-icon">TM</div>
+        <span class="nav__brand-text">Trading<span>Mentor</span></span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <button class="nav__cta" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})">Enroll Now</button>
+      <button class="nav__toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="hero__content reveal">
+          <div class="hero__tag">Limited Spots Available</div>
+          <h1 class="hero__title">Stop Guessing.<br>Start <em>Profiting</em>.</h1>
+          <p class="hero__desc">The live mentorship program that takes you from confused beginner to confident trader. Real strategies. Real accountability. Real results.</p>
+          <div class="hero__actions">
+            <a href="#pricing" class="btn btn-primary">See Plans &#8594;</a>
+            <a href="#video" class="btn btn-outline">Watch Intro</a>
+          </div>
+        </div>
+        <div class="hero__video reveal" id="video">
+          <video src="videos/intro.mp4" autoplay muted loop playsinline preload="metadata"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CANDLE CHART -->
+  <section class="chart-section" id="chart">
+    <div class="container">
+      <div class="chart__header reveal">
+        <div class="chart__label">Live Market Insight</div>
+        <h2 class="chart__title">Read the Chart. Read the Market.</h2>
+        <p class="chart__subtitle">Our students learn to identify patterns, manage risk, and execute trades with precision — not guesswork.</p>
+      </div>
+      <div class="chart__canvas reveal" id="candleChart"></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="chart__header reveal">
+        <div class="chart__label">What You Get</div>
+        <h2 class="chart__title">Everything You Need to Trade Like a Pro</h2>
+        <p class="chart__subtitle">No fluff. No recycled YouTube content. This is structured, mentorship-driven learning.</p>
+      </div>
+      <div class="features__grid stagger">
+        <div class="feature-card">
+          <div class="feature-card__icon">&#128200;</div>
+          <div class="feature-card__title">Live Market Sessions</div>
+          <div class="feature-card__desc">Trade alongside your mentor in real-time. Watch them analyze setups, enter trades, and manage positions — live.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#127891;</div>
+          <div class="feature-card__title">Structured Curriculum</div>
+          <div class="feature-card__desc">From price action to risk management to psychology. Each module builds on the last. No random lessons.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#128483;</div>
+          <div class="feature-card__title">1-on-1 Mentor Calls</div>
+          <div class="feature-card__desc">Stuck on a concept? Book a private call with your mentor. Get personalized feedback on your trades and journal.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#128274;</div>
+          <div class="feature-card__title">Private Community</div>
+          <div class="feature-card__desc">Join a tight-knit group of serious traders. Share charts, discuss setups, and hold each other accountable.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#128218;</div>
+          <div class="feature-card__title">Trade Journal Template</div>
+          <div class="feature-card__desc">Our proprietary journaling framework that forces you to review every trade. The #1 habit of profitable traders.</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-card__icon">&#127919;</div>
+          <div class="feature-card__title">Strategy Playbook</div>
+          <div class="feature-card__desc">3 battle-tested strategies with exact entry, stop-loss, and take-profit rules. No ambiguity. No "it depends."</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="pricing__header reveal">
+        <div class="chart__label">One Program, Three Plans</div>
+        <h2 class="chart__title">Pick Your Level of Access</h2>
+        <p class="chart__subtitle">Every plan includes the core curriculum. The difference is how much direct access you get to your mentor.</p>
+      </div>
+      <div class="pricing__grid stagger">
+        <div class="price-card">
+          <div class="price-card__name">Essentials</div>
+          <div class="price-card__name" style="font-size:13px;color:var(--ink-dim);font-weight:400;margin-bottom:16px">Self-Paced Learning</div>
+          <div class="price-card__price">&#8377;4,999 <small>/one-time</small></div>
+          <div class="price-card__period">Lifetime course access</div>
+          <ul class="price-card__features">
+            <li>Full video curriculum</li>
+            <li>Strategy playbook (3 setups)</li>
+            <li>Trade journal template</li>
+            <li>Private community access</li>
+            <li>Weekly group Q&A</li>
+          </ul>
+          <button class="btn btn-outline" style="width:100%" onclick="openPayment('Essentials','&#8377;4,999')">Get Started</button>
+        </div>
+        <div class="price-card price-card--featured">
+          <div class="price-card__popular">Most Popular</div>
+          <div class="price-card__name">Pro Trader</div>
+          <div class="price-card__name" style="font-size:13px;color:var(--ink-dim);font-weight:400;margin-bottom:16px">Direct Mentor Access</div>
+          <div class="price-card__price">&#8377;14,999 <small>/one-time</small></div>
+          <div class="price-card__period">Lifetime access + 3 months mentorship</div>
+          <ul class="price-card__features">
+            <li>Everything in Essentials</li>
+            <li>Live market sessions (3x/week)</li>
+            <li>2 private mentor calls/month</li>
+            <li>Personalized trade reviews</li>
+            <li>Priority community support</li>
+            <li>Bonus: Options module</li>
+          </ul>
+          <button class="btn btn-primary" style="width:100%" onclick="openPayment('Pro Trader','&#8377;14,999')">Get Started</button>
+        </div>
+        <div class="price-card">
+          <div class="price-card__name">Elite</div>
+          <div class="price-card__name" style="font-size:13px;color:var(--ink-dim);font-weight:400;margin-bottom:16px">Full Immersion</div>
+          <div class="price-card__price">&#8377;29,999 <small>/one-time</small></div>
+          <div class="price-card__period">Lifetime access + 6 months mentorship</div>
+          <ul class="price-card__features">
+            <li>Everything in Pro Trader</li>
+            <li>Daily live market sessions</li>
+            <li>Unlimited 1-on-1 mentor calls</li>
+            <li>Portfolio review & risk audit</li>
+            <li>Funded trader challenge prep</li>
+            <li>Bonus: Advanced options + crypto</li>
+          </ul>
+          <button class="btn btn-outline" style="width:100%" onclick="openPayment('Elite','&#8377;29,999')">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="process" id="process">
+    <div class="container">
+      <div class="chart__header reveal">
+        <div class="chart__label">How It Works</div>
+        <h2 class="chart__title">From Payment to Profit in 4 Steps</h2>
+      </div>
+      <div class="process__steps stagger">
+        <div class="process__step">
+          <div class="process__step-num">1</div>
+          <div class="process__step-title">Choose Your Plan</div>
+          <div class="process__step-desc">Pick Essentials, Pro, or Elite based on how much mentor access you want.</div>
+        </div>
+        <div class="process__step">
+          <div class="process__step-num">2</div>
+          <div class="process__step-title">Complete Payment</div>
+          <div class="process__step-desc">Pay via UPI or card. Send a screenshot as proof. Our team verifies within 2-3 minutes.</div>
+        </div>
+        <div class="process__step">
+          <div class="process__step-num">3</div>
+          <div class="process__step-title">Get Your Access</div>
+          <div class="process__step-desc">You'll receive an email with your login, community invite, and mentor schedule — automatically.</div>
+        </div>
+        <div class="process__step">
+          <div class="process__step-num">4</div>
+          <div class="process__step-title">Start Trading Smarter</div>
+          <div class="process__step-desc">Begin your first live session. Follow the playbook. Track every trade in the journal.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="reviews" id="reviews">
+    <div class="container">
+      <div class="chart__header reveal">
+        <div class="chart__label">Student Results</div>
+        <h2 class="chart__title">Real People. Real P&L.</h2>
+      </div>
+      <div class="reviews__grid stagger">
+        <div class="review-card">
+          <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="review-card__text">I was blowing accounts for 8 months before joining. Within 6 weeks of the Pro plan, I had my first green month. The live sessions changed everything — seeing trades taken in real-time with reasoning explained.</div>
+          <div class="review-card__author">
+            <div class="review-card__avatar">RK</div>
+            <div><div class="review-card__name">Rahul K.</div><div class="review-card__role">Pro Trader &middot; 4 months in</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="review-card__text">The strategy playbook alone is worth 10x the price. I used to take random trades based on Telegram tips. Now I have a system. My win rate went from 30% to 62%.</div>
+          <div class="review-card__author">
+            <div class="review-card__avatar">AP</div>
+            <div><div class="review-card__name">Ananya P.</div><div class="review-card__role">Essentials &middot; 2 months in</div></div>
+          </div>
+        </div>
+        <div class="review-card">
+          <div class="review-card__stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="review-card__text">Elite plan here. The unlimited 1-on-1 calls are insane. My mentor caught mistakes I didn't even know I was making. The portfolio review alone saved me from a 50% drawdown.</div>
+          <div class="review-card__author">
+            <div class="review-card__avatar">VS</div>
+            <div><div class="review-card__name">Vikram S.</div><div class="review-card__role">Elite &middot; 5 months in</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="chart__header reveal">
+        <div class="chart__label">FAQ</div>
+        <h2 class="chart__title">Got Questions?</h2>
+      </div>
+      <div class="faq__list">
+        <div class="faq-item">
+          <button class="faq-item__question">How do I pay and get access?</button>
+          <div class="faq-item__answer"><p>Click "Get Started" on any plan. You'll see UPI and card payment options. After paying, send a screenshot as proof. Our team verifies within 2-3 minutes and sends you an email with your access link.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">Is this for beginners or advanced traders?</button>
+          <div class="faq-item__answer"><p>Both. The Essentials plan is self-paced and starts from scratch. Pro and Elite include live mentorship that adapts to your level — your mentor will meet you where you are.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">What markets do you cover?</button>
+          <div class="faq-item__answer"><p>We primarily focus on Indian equities (NSE/BSE) and indices (Nifty, BankNifty). The Elite plan also includes options strategies and a bonus crypto module.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">Can I upgrade my plan later?</button>
+          <div class="faq-item__answer"><p>Yes. You can upgrade at any time by paying the difference. Your mentorship period extends accordingly. Just reach out to us on the community.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">What if I'm not profitable after the mentorship?</button>
+          <div class="faq-item__answer"><p>We offer a 30-day money-back guarantee on the Essentials plan. For Pro and Elite, we'll extend your mentorship by 30 days if you're committed but not yet profitable — we're invested in your success.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-item__question">How long do I have access to the curriculum?</button>
+          <div class="faq-item__answer"><p>Lifetime. Once you enroll, the video lessons, strategy playbook, and community access are yours forever. Mentorship calls are limited to the plan duration.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="container reveal">
+      <h2 class="cta__title">Ready to Stop Losing<br>and Start <em>Earning</em>?</h2>
+      <p class="cta__desc">Join hundreds of traders who turned their P&L from red to green. Your future profitable self will thank you.</p>
+      <a href="#pricing" class="btn btn-primary">See Plans &#8594;</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <div class="footer__brand-icon">TM</div>
+          <span class="footer__brand-text">Trading<span>Mentor</span></span>
+        </div>
+        <div class="footer__copy">&copy; 2026 TradingMentor. All rights reserved.</div>
+        <div class="footer__links">
+          <a href="#features">Features</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#faq">FAQ</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PAYMENT MODAL -->
+  <div class="modal-overlay" id="paymentModal">
+    <div class="modal">
+      <button class="modal__close" onclick="closePayment()">&times;</button>
+      <div class="modal__tag">Secure Payment</div>
+      <h2 class="modal__title" id="modalPlan">Plan Name</h2>
+      <div class="modal__price" id="modalPrice">&#8377;0</div>
+      <div class="modal__divider"></div>
+      <div class="modal__label">Choose Payment Method</div>
+      <div class="modal__methods">
+        <div class="modal__method" data-type="upi">
+          <div class="modal__method-icon">&#128179;</div>
+          <div class="modal__method-text">UPI<small>Google Pay, PhonePe, Paytm</small></div>
+        </div>
+        <div class="modal__method" data-type="card">
+          <div class="modal__method-icon">&#128179;</div>
+          <div class="modal__method-text">Credit / Debit Card<small>Visa, Mastercard, RuPay</small></div>
+        </div>
+      </div>
+      <div id="upiSection" style="display:none">
+        <div class="modal__upi-id">
+          Send payment to:<br>
+          <code>tradingmentor@upi</code>
+        </div>
+        <div class="modal__note">After paying, send a screenshot to <strong>support@tradingmentor.pro</strong> or WhatsApp us at <strong>+91 98765 43210</strong>. Access link sent within <strong>2-3 minutes</strong>.</div>
+        <button class="btn btn-primary" style="width:100%;margin-top:16px" onclick="confirmPayment()">I've Sent Payment</button>
+      </div>
+      <div id="cardSection" style="display:none">
+        <div class="modal__note">Card payments are processed securely. After payment, you'll receive your access link via email within <strong>2-3 minutes</strong>.</div>
+        <button class="btn btn-primary" style="width:100%;margin-top:16px" onclick="confirmPayment()">Continue to Payment</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
